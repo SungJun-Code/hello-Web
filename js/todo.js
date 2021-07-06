@@ -47,10 +47,13 @@ function paintTodoList(x){
     toDoList.appendChild(appendli);
 }
 
+//1.localstorage
 function saveToDos() {
     //배열을 저장하기 위해 JSON형태로 변환하여 저장하기.
     localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
 }
+
+//sessionstorage
 
 //Delete ToDo
 function deleteToDo(event){
